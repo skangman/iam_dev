@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Slide from "react-reveal";
+// import Slide from "react-reveal";
 
 class Resume extends Component {
   getRandomColor() {
@@ -88,65 +88,65 @@ class Resume extends Component {
 
     return (
       <section id="resume">
-        <Slide left duration={1300}>
-          <div className="row education">
-            <div className="three columns header-col">
-              <h1>
-                <span>Education</span>
-              </h1>
-            </div>
+        {/* <Slide left duration={1300}> */}
+        <div className="row education">
+          <div className="three columns header-col">
+            <h1>
+              <span>Education</span>
+            </h1>
+          </div>
 
-            <div className="nine columns main-col">
-              <div className="row item">
-                <div className="twelve columns">{education}</div>
-              </div>
+          <div className="nine columns main-col">
+            <div className="row item">
+              <div className="twelve columns">{education}</div>
             </div>
           </div>
-        </Slide>
+        </div>
+        {/* </Slide> */}
 
-        <Slide left duration={1300}>
-          <div className="row tranning">
-            <div className="three columns header-col">
-              <h1>
-                <span>tranning</span>
-              </h1>
-            </div>
+        {/* <Slide left duration={1300}> */}
+        <div className="row tranning">
+          <div className="three columns header-col">
+            <h1>
+              <span>tranning</span>
+            </h1>
+          </div>
 
-            <div className="nine columns main-col">
-              <div className="row item">
-                <div className="twelve columns">{tranning}</div>
-              </div>
+          <div className="nine columns main-col">
+            <div className="row item">
+              <div className="twelve columns">{tranning}</div>
             </div>
           </div>
-        </Slide>
+        </div>
+        {/* </Slide> */}
 
-        <Slide left duration={1300}>
-          <div className="row work">
-            <div className="three columns header-col">
-              <h1>
-                <span>Work</span>
-              </h1>
-            </div>
-
-            <div className="nine columns main-col">{work}</div>
+        {/* <Slide left duration={1300}> */}
+        <div className="row work">
+          <div className="three columns header-col">
+            <h1>
+              <span>Work</span>
+            </h1>
           </div>
-        </Slide>
+
+          <div className="nine columns main-col">{work}</div>
+        </div>
+        {/* </Slide> */}
 
 
-        <Slide left duration={1300}>
-          <div className="row skills_new">
-            <div className="three columns header-col">
-              <h1>
-                <span>Skills</span>
-              </h1>
-            </div>
-
-            <div className="nine columns main-col">
-              <p>{this.props.data.skillmessage}</p>
-              <div className="skill-groups">{skillsNew}</div>
-            </div>
+        {/* <Slide left duration={1300}> */}
+        <div className="row skills_new">
+          <div className="three columns header-col">
+            <h1>
+              <span>Skills</span>
+            </h1>
           </div>
-        </Slide>
+
+          <div className="nine columns main-col">
+            <p>{this.props.data.skillmessage}</p>
+            <div className="skill-groups">{skillsNew}</div>
+          </div>
+        </div>
+        {/* </Slide> */}
 
       </section>
     );

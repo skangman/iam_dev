@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Fade, Slide } from "react-reveal";
+// import { Fade, Slide } from "react-reveal";
 
 class Contact extends Component {
   render() {
@@ -15,19 +15,19 @@ class Contact extends Component {
 
     return (
       <section id="contact">
-        <Fade bottom duration={1000}>
-          <div className="row section-head">
-            <div className="two columns header-col">
-              <h1>
-                <span>Get In Touch.</span>
-              </h1>
-            </div>
-
-            <div className="ten columns">
-              <p className="lead">{message}</p>
-            </div>
+        {/* <Fade bottom duration={1000}> */}
+        <div className="row section-head">
+          <div className="two columns header-col">
+            <h1>
+              <span>Get In Touch.</span>
+            </h1>
           </div>
-        </Fade>
+
+          <div className="ten columns">
+            <p className="lead">{message}</p>
+          </div>
+        </div>
+        {/* </Fade> */}
 
         <div className="row">
           {/* <Slide left duration={1000}>
@@ -103,21 +103,21 @@ class Contact extends Component {
             </div>
           </Slide> */}
 
-          <Slide right duration={1000}>
-            <aside className="four columns footer-widgets">
-              <div className="widget widget_contact">
-                <h4>Address and Phone</h4>
-                <p className="address">
-                  {name}
-                  <br />
-                  {street} <br />
-                  {city}, {state} {zip}
-                  <br />
-                  <span>{phone}</span>
-                </p>
-              </div>
+          {/* <Slide right duration={1000}> */}
+          <aside className="four columns footer-widgets">
+            <div className="widget widget_contact">
+              <h4>Address and Phone</h4>
+              <p className="address">
+                {name}
+                <br />
+                {street} <br />
+                {city}, {state} {zip}
+                <br />
+                <span>{phone}</span>
+              </p>
+            </div>
 
-              {/* <div className="widget widget_tweets">
+            {/* <div className="widget widget_tweets">
                 <h4 className="widget-title">Latest Tweets</h4>
                 <ul id="twitter">
                   <li>
@@ -145,8 +145,8 @@ class Contact extends Component {
                   </li>
                 </ul>
               </div> */}
-            </aside>
-          </Slide>
+          </aside>
+          {/* </Slide> */}
         </div>
       </section>
     );

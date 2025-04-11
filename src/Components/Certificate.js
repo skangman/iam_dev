@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Zmage from "react-zmage";
-import Fade from "react-reveal";
+// import Fade from "react-reveal";
 
 let id = 0;
 class Certificate extends Component {
@@ -22,20 +22,20 @@ class Certificate extends Component {
 
         return (
             <section id="portfolio">
-                <Fade left duration={1000} distance="40px">
-                    <div className="row">
-                        <div className="twelve columns collapsed">
-                            <h1>Certificate</h1>
+                {/* <Fade left duration={1000} distance="40px"> */}
+                <div className="row">
+                    <div className="twelve columns collapsed">
+                        <h1>Certificate</h1>
 
-                            <div
-                                id="portfolio-wrapper"
-                                className="bgrid-quarters s-bgrid-thirds cf"
-                            >
-                                {lists}
-                            </div>
+                        <div
+                            id="portfolio-wrapper"
+                            className="bgrid-quarters s-bgrid-thirds cf"
+                        >
+                            {lists}
                         </div>
                     </div>
-                </Fade>
+                </div>
+                {/* </Fade> */}
             </section>
         );
     }
