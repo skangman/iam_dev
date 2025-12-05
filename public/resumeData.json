@@ -1,6 +1,6 @@
 {
   "main": {
-    "name": "Orasa Kenjantha",
+    "name": "Thachamon Kenjantha",
     "description": " I first chink, I look in a job is the opportunity to better my self. i like jobs where i am forced to learn and where i can get better at things over time, if job isn't challenging, i can't improve my skills",
     "image": "profilepic.jpg",
     "bio": "I’m a Full-Stack Web Developer with a passion for clean code and modern web technologies. I enjoy working on challenging projects and building user-friendly applications. Always learning, always building.",
@@ -16,8 +16,8 @@
       "state": "Khon Kaen Province",
       "zip": "40210"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload": "http://timbakerdev.com",
+    "website": "https://iam-dev-skangmans-projects.vercel.app/",
+    "resumedownload": "https://drive.google.com/file/d/1MgWB4fZvIaZHlx4e1Yc1nP-R5rtyIg-W/view?usp=sharing",
     "social": [
       {
         "name": "facebook",
