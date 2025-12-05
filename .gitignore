@@ -9,7 +9,7 @@
 # production
 /build
 
-/public/resumeData.json
+# /public/resumeData.json
 
 # misc
 .DS_Store
