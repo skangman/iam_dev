@@ -248,6 +248,24 @@
         "category": "Globalhouse HR SALARY",
         "image": "011.jpg",
         "url": "#"
+      },
+      {
+        "title": "Security Awareness",
+        "category": "Security Awareness",
+        "image": "012.jpg",
+        "url": "#"
+      },
+      {
+        "title": "ISMS FORM HUB Management",
+        "category":  "ISMS FORM HUB Management",
+        "image": "013.jpg",
+        "url": "#"
+      },
+      {
+        "title": "Internet & Internal Security",
+        "category": "Internet & Internal Security",
+        "image": "014.jpg",
+        "url": "#"
       }
     ]
   },
@@ -268,6 +286,18 @@
       {
         "title": "Certificate-04",
         "image": "004.jpg"
+      },
+       {
+        "title": "Certificate-05",
+        "image": "005.jpg"
+      },
+      {
+        "title": "Certificate-06",
+        "image": "006.jpg"
+      },
+      {
+        "title": "Certificate-07",
+        "image": "007.jpg"
       }
     ]
   }
