@@ -268,6 +268,18 @@
         "category": "Internet & Internal Security",
         "image": "014.jpg",
         "url": "#"
+      },
+      {
+        "title": "CMI Badminton Court Booking",
+        "category": "CMI Badminton court booking system",
+        "image": "015.jpg",
+        "url": "#"
+      },
+      {
+        "title": "CMI Badminton Admin Dashboard",
+        "category": "CMI Badminton admin dashboard and reporting",
+        "image": "016.jpg",
+        "url": "#"
       }
     ]
   },
