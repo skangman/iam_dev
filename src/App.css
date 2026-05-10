@@ -1,0 +1,471 @@
+:root {
+  --code-font: "SFMono-Regular", "SF Mono", Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+body,
+button,
+input,
+textarea,
+select,
+.App {
+  font-family: var(--code-font) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+span,
+em,
+strong,
+b,
+label,
+header .banner-text h1,
+header .banner-text h3,
+#nav-wrap,
+#nav-wrap a,
+#about h2,
+#resume h1,
+#resume h3,
+#resume .info,
+#portfolio h1,
+#contact h1,
+#contact .lead,
+footer,
+.button,
+button.submit {
+  font-family: var(--code-font) !important;
+  letter-spacing: 0 !important;
+}
+
+header .banner-text h1 {
+  font-weight: 800 !important;
+}
+
+header .banner-text h3,
+#about p,
+#resume p,
+#contact .lead {
+  font-weight: 400 !important;
+}
+
+#about > .row > .nine.columns.main-col > p:first-of-type {
+  color: #f97316 !important;
+}
+
+.fa,
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: FontAwesome !important;
+}
+
+#contact .contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#contact .section-head .contact-actions {
+  justify-content: flex-end;
+}
+
+#contact .contact-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 14px;
+  border: 1px solid #dce5ea;
+  border-radius: 8px;
+  color: #17202a !important;
+  background: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+#contact .contact-action:hover {
+  transform: translateY(-2px);
+  border-color: #b7c7cf;
+  box-shadow: 0 12px 28px rgba(23, 32, 42, 0.12);
+}
+
+#contact .contact-action-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 22px;
+  border-radius: 5px;
+  color: #ffffff;
+  background: #06c755;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+#contact .telegram-icon {
+  background: #229ed9;
+}
+
+#contact .email-action i {
+  color: #14b8a6;
+  font-size: 15px;
+}
+
+#contact .phone-action i {
+  color: #f97316;
+  font-size: 16px;
+}
+
+#resume .skills_new .main-col {
+  width: 74% !important;
+}
+
+#resume .skill-groups {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  column-gap: 42px !important;
+  row-gap: 30px !important;
+  margin-top: 0 !important;
+}
+
+#resume .skills_new .main-col > p {
+  display: none !important;
+}
+
+#resume .skill-groups > div {
+  min-width: 0;
+  padding: 0 0 18px;
+  border-bottom: 1px solid #dce5ea;
+  background: transparent;
+  box-shadow: none;
+}
+
+#resume .skill-group-experience-and-projects {
+  grid-column: 1 / -1;
+}
+
+#resume .skill-group-experience-and-projects .skill-category {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  column-gap: 28px !important;
+}
+
+#resume .skill-groups h3 {
+  margin: 0 0 10px !important;
+  color: #17202a !important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+}
+
+#resume .skill-category {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 7px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#resume .skill-category li {
+  display: grid !important;
+  grid-template-columns: 12px minmax(0, 1fr) !important;
+  align-items: start !important;
+  gap: 8px !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  color: #334155 !important;
+  background: transparent !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 1.55 !important;
+  text-align: left !important;
+  white-space: normal !important;
+}
+
+#resume .skill-bullet {
+  color: #14b8a6;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+@media screen and (max-width: 767px) {
+  #resume .skills_new .main-col {
+    width: 100% !important;
+  }
+
+  #resume .skill-groups {
+    grid-template-columns: 1fr !important;
+  }
+
+  #resume .skill-group-experience-and-projects .skill-category {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+#portfolio,
+#certificate {
+  background: #f4f7f8 !important;
+  padding: 72px 0 80px !important;
+}
+
+#portfolio .row,
+#certificate .row {
+  width: min(1120px, calc(100% - 40px)) !important;
+  max-width: 1120px !important;
+  margin: 0 auto !important;
+}
+
+#portfolio .twelve.columns,
+#certificate .twelve.columns {
+  width: 100% !important;
+  float: none !important;
+  padding: 0 !important;
+}
+
+#portfolio h1,
+#certificate h1 {
+  margin: 0 0 34px !important;
+  color: #17202a !important;
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+  text-align: left !important;
+  text-transform: none !important;
+}
+
+#portfolio h1::after,
+#certificate h1::after {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 3px;
+  margin-top: 12px;
+  border-radius: 999px;
+  background: #14b8a6;
+}
+
+#portfolio-wrapper,
+#certificate-wrapper,
+.portfolio-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)) !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+}
+
+#portfolio-wrapper .portfolio-item,
+#certificate-wrapper .portfolio-item,
+#portfolio-wrapper .portfolio-card,
+#certificate-wrapper .portfolio-card {
+  width: auto !important;
+  max-width: none !important;
+  float: none !important;
+  clear: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#portfolio .item-wrap,
+#certificate .item-wrap {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  border: 1px solid #dce5ea !important;
+  border-radius: 10px !important;
+  background: #ffffff !important;
+  box-shadow: 0 14px 34px rgba(23, 32, 42, 0.08) !important;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease !important;
+}
+
+#portfolio .item-wrap:hover,
+#certificate .item-wrap:hover {
+  transform: translateY(-4px);
+  border-color: #b7c7cf !important;
+  box-shadow: 0 22px 48px rgba(23, 32, 42, 0.14) !important;
+}
+
+#portfolio .item-wrap a,
+#certificate .item-wrap a,
+#portfolio .item-wrap > div:first-child,
+#certificate .item-wrap > div:first-child {
+  display: block !important;
+}
+
+#portfolio .item-wrap img,
+#certificate .item-wrap img {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 10 !important;
+  display: block !important;
+  object-fit: cover !important;
+  background: #eef3f5 !important;
+}
+
+#portfolio .portfolio-title,
+#certificate .portfolio-title {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 16px;
+  border-top: 1px solid #edf1f3;
+  color: #334155;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+  #portfolio,
+  #certificate {
+    padding: 54px 0 60px !important;
+  }
+
+  #portfolio .row,
+  #certificate .row {
+    width: calc(100% - 28px) !important;
+  }
+
+  #portfolio-wrapper,
+  #certificate-wrapper {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 32px;
+  margin: 0 0 0 8px;
+  padding: 0 11px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 6px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+@media only screen and (max-width: 767px) {
+  ul#nav li.theme-nav-item {
+    padding-left: 4% !important;
+    padding-right: 4% !important;
+  }
+
+  ul#nav li.theme-nav-item .theme-toggle {
+    width: auto;
+    margin: 12px 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    justify-content: flex-start;
+  }
+
+  ul#nav li.theme-nav-item .theme-toggle:hover {
+    color: #fe6928 !important;
+  }
+}
+
+html[data-theme="dark"] body {
+  background: #111417 !important;
+}
+
+html[data-theme="dark"] #about,
+html[data-theme="dark"] #resume,
+html[data-theme="dark"] #portfolio,
+html[data-theme="dark"] #certificate {
+  background: #151a1f !important;
+}
+
+html[data-theme="dark"] #about h2,
+html[data-theme="dark"] #resume h1,
+html[data-theme="dark"] #resume h1 span,
+html[data-theme="dark"] #resume h3,
+html[data-theme="dark"] #portfolio h1,
+html[data-theme="dark"] #certificate h1,
+html[data-theme="dark"] #about .contact-details h2 {
+  color: #eef3f7 !important;
+}
+
+html[data-theme="dark"] #about p,
+html[data-theme="dark"] #about .address,
+html[data-theme="dark"] #about .address span,
+html[data-theme="dark"] #resume p,
+html[data-theme="dark"] #resume .info,
+html[data-theme="dark"] #resume .skill-category li {
+  color: #aab4bf !important;
+}
+
+html[data-theme="dark"] #about > .row > .nine.columns.main-col > p:first-of-type {
+  color: #fb923c !important;
+}
+
+html[data-theme="dark"] #resume .skill-groups > div {
+  border-bottom-color: #33404a !important;
+}
+
+html[data-theme="dark"] #portfolio .item-wrap,
+html[data-theme="dark"] #certificate .item-wrap {
+  border-color: #33404a !important;
+  background: #1b2229 !important;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.24) !important;
+}
+
+html[data-theme="dark"] #portfolio .portfolio-title,
+html[data-theme="dark"] #certificate .portfolio-title {
+  border-top-color: #33404a;
+  color: #dbe5ec;
+  background: #1b2229;
+}
+
+html[data-theme="dark"] #portfolio .item-wrap img,
+html[data-theme="dark"] #certificate .item-wrap img {
+  background: #202a32 !important;
+}
+
+html[data-theme="dark"] #contact {
+  background: #151515 !important;
+}
+
+html[data-theme="dark"] #contact h1,
+html[data-theme="dark"] #contact h1 span,
+html[data-theme="dark"] #contact h4 {
+  color: #eef3f7 !important;
+}
+
+html[data-theme="dark"] #contact .lead,
+html[data-theme="dark"] #contact .address,
+html[data-theme="dark"] #contact .address span {
+  color: #8d8d8d !important;
+}
+
+html[data-theme="dark"] #contact .contact-action {
+  border-color: #33404a;
+  color: #eef3f7 !important;
+  background: #1f252b;
+}

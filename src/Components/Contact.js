@@ -11,7 +11,18 @@ class Contact extends Component {
     const state = this.props.data.address.state;
     const zip = this.props.data.address.zip;
     const phone = this.props.data.phone;
+    const email = this.props.data.email;
+    const lineid = this.props.data.lineid;
+    const telegram = this.props.data.telegram;
     const message = this.props.data.contactmessage;
+    const lineUrl = lineid
+      ? lineid.startsWith("http")
+        ? lineid
+        : `https://line.me/ti/p/~${lineid}`
+      : null;
+    const telegramUrl = telegram
+      ? `https://t.me/${telegram.replace("@", "")}`
+      : null;
 
     return (
       <section id="contact">
@@ -25,6 +36,42 @@ class Contact extends Component {
 
           <div className="ten columns">
             <p className="lead">{message}</p>
+
+            <div className="contact-actions">
+              {lineUrl && (
+                <a
+                  className="contact-action line-action"
+                  href={lineUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="contact-action-icon">LINE</span>
+                  <span>Chat on LINE</span>
+                </a>
+              )}
+
+              {telegramUrl && (
+                <a
+                  className="contact-action telegram-action"
+                  href={telegramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="contact-action-icon telegram-icon">TG</span>
+                  <span>Chat on Telegram</span>
+                </a>
+              )}
+
+              <a className="contact-action email-action" href={`mailto:${email}`}>
+                <i className="fa fa-envelope"></i>
+                <span>Email</span>
+              </a>
+
+              <a className="contact-action phone-action" href={`tel:${phone.replace(/-/g, "")}`}>
+                <i className="fa fa-phone"></i>
+                <span>Call</span>
+              </a>
+            </div>
           </div>
         </div>
         {/* </Fade> */}
@@ -115,6 +162,7 @@ class Contact extends Component {
                 <br />
                 <span>{phone}</span>
               </p>
+
             </div>
 
             {/* <div className="widget widget_tweets">

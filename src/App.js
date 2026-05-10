@@ -15,7 +15,8 @@ class App extends Component {
     super(props);
     this.state = {
       foo: "bar",
-      resumeData: {}
+      resumeData: {},
+      theme: window.localStorage.getItem("theme") || "light"
     };
 
     ReactGA.initialize("UA-110570651-1");
@@ -39,18 +40,37 @@ class App extends Component {
 
   componentDidMount() {
     this.getResumeData();
+    document.documentElement.setAttribute("data-theme", this.state.theme);
+  }
+
+  toggleTheme = () => {
+    this.setState(
+      (prevState) => ({
+        theme: prevState.theme === "dark" ? "light" : "dark"
+      }),
+      () => {
+        window.localStorage.setItem("theme", this.state.theme);
+        document.documentElement.setAttribute("data-theme", this.state.theme);
+      }
+    );
   }
 
   render() {
+    const { resumeData, theme } = this.state;
+
     return (
-      <div className="App">
-        <Header data={this.state.resumeData.main} />
-        <About data={this.state.resumeData.main} />
-        <Resume data={this.state.resumeData.resume} />
-        <Portfolio data={this.state.resumeData.portfolio} />
-        <Certificate data={this.state.resumeData.certificate} />
-        <Contact data={this.state.resumeData.main} />
-        <Footer data={this.state.resumeData.main} />
+      <div className={`App ${theme}-theme`}>
+        <Header
+          data={resumeData.main}
+          theme={theme}
+          onThemeToggle={this.toggleTheme}
+        />
+        <About data={resumeData.main} />
+        <Resume data={resumeData.resume} />
+        <Portfolio data={resumeData.portfolio} />
+        <Certificate data={resumeData.certificate} />
+        <Contact data={resumeData.main} />
+        <Footer data={resumeData.main} />
       </div>
     );
   }

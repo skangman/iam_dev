@@ -10,6 +10,7 @@ class Header extends Component {
     const github = this.props.data.github;
     const name = this.props.data.name;
     const description = this.props.data.description;
+    const theme = this.props.theme || "light";
 
     return (
       <header id="home">
@@ -52,6 +53,18 @@ class Header extends Component {
               <a className="smoothscroll" href="#contact">
                 Contact
               </a>
+            </li>
+
+            <li className="theme-nav-item">
+              <button
+                type="button"
+                className="theme-toggle"
+                onClick={this.props.onThemeToggle}
+                aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+              >
+                <i className={`fa ${theme === "dark" ? "fa-sun-o" : "fa-moon-o"}`}></i>
+                <span>{theme === "dark" ? "Light" : "Dark"}</span>
+              </button>
             </li>
           </ul>
         </nav>

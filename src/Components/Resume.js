@@ -57,9 +57,15 @@ class Resume extends Component {
 
     const skillsNew = this.props.data.skills_new
       ? Object.entries(this.props.data.skills_new).map(([category, skills]) => {
+        const categoryClass = category
+          .toLowerCase()
+          .replace(/&/g, "and")
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/(^-|-$)/g, "");
+
         return (
-          <div key={category}>
-            <h3>{category.charAt(0).toUpperCase() + category.slice(1)}</h3>
+          <div key={category} className={`skill-group skill-group-${categoryClass}`}>
+            <h3>{category}</h3>
             <ul className="skill-category">
               {skills.map((skill) => (
                 <li key={skill}>
@@ -137,7 +143,7 @@ class Resume extends Component {
         <div className="row skills_new">
           <div className="three columns header-col">
             <h1>
-              <span>Skills</span>
+              <span>Technical Skills</span>
             </h1>
           </div>
 

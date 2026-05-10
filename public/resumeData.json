@@ -4,10 +4,11 @@
     "description": " I first chink, I look in a job is the opportunity to better my self. i like jobs where i am forced to learn and where i can get better at things over time, if job isn't challenging, i can't improve my skills",
     "image": "profilepic.jpg",
     "bio": "I’m a Full-Stack Web Developer with a passion for clean code and modern web technologies. I enjoy working on challenging projects and building user-friendly applications. Always learning, always building.",
-    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+    "contactmessage": "Feel free to contact me for web development projects, API development, system integration, or technical collaboration.",
     "email": "kenjantha.dev@gmail.com",
     "phone": "085-016-3174",
-    "lineid": "",
+    "lineid": "https://line.me/ti/p/Z4-Mi7AJ7f",
+    "telegram": "kenjantha_dev",
     "github": "https://github.com/nordicgiant2/react-nice-resume",
     "project": "https://github.com/nordicgiant2/react-nice-resume",
     "address": {
@@ -47,7 +48,7 @@
     ]
   },
   "resume": {
-    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage": "",
     "education": [
       {
         "school": "Rajamangala University of Technology Isan",
@@ -107,47 +108,48 @@
       }
     ],
     "skills_new": {
-      "frontend": [
-        "HTML",
-        "HTML5",
-        "React",
-        "CSS",
-        "TailwindCSS",
-        "JavaScript",
-        "Ajax",
-        "jQuery",
-        "JSON",
-        "Bootstrap"
+      "Frontend Development": [
+        "Framework / Library: Next.js, React, TypeScript",
+        "Styling: Tailwind CSS, Bootstrap, CSS",
+        "Core Technologies: HTML, JavaScript",
+        "Others: AJAX, jQuery, JSON"
       ],
-      "backend": [
-        "PHP Framework MVC (CodeIgniter)",
-        "RESTful API (Node.js)"
+      "Backend Development": [
+        "Node.js (Express, NestJS)",
+        "Helix Django API",
+        "PHP (CodeIgniter - MVC Architecture)",
+        "RESTful API Design & Development"
       ],
-      "database": [
-        "MySQL",
+      "Database": [
         "PostgreSQL",
+        "MySQL",
         "SQL Server"
       ],
-      "tools": [
-        "Git",
-        "GitHub",
-        "GitLab (CI/CD)",
-        "Postman",
-        "Thunder Client",
-        "SQL Workbench",
-        "Navicat",
-        "Xshell"
+      "Tools & DevOps": [
+        "Git, GitHub, GitLab (CI/CD)",
+        "Docker",
+        "Postman, Thunder Client",
+        "SQL Workbench, Navicat",
+        "Xshell",
+        "Deployment & Server Management"
       ],
-      "security": [
-        "Pentest Security",
-        "Encryption",
-        "JWT (jsonwebtoken)"
+      "Security & Authentication": [
+        "JWT (JSON Web Token)",
+        "Encryption Techniques",
+        "Basic Pentest / Security Testing"
       ],
-      "payment": [
-        "2C2P Payment Gateway Integration"
+      "Payment & Integration": [
+        "2C2P Payment Gateway Integration",
+        "Third-party API Integration (Telegram, Cloud Storage, File Upload)"
       ],
-      "design": [
-        "Adobe Photoshop"
+      "Experience & Projects": [
+        "พัฒนา ระบบ E-commerce ครบวงจร",
+        "สร้าง CMS / Admin Dashboard สำหรับจัดการข้อมูล",
+        "พัฒนา ระบบจัดการสินค้า / ออเดอร์ / สต๊อก",
+        "พัฒนา Helix Django API สำหรับเชื่อมต่อและจัดการข้อมูลระบบ",
+        "ออกแบบและพัฒนา Backend API รองรับระบบขนาดจริง",
+        "เชื่อมต่อระบบ Payment Gateway และ External Services",
+        "ออกแบบ System Flow และแก้ปัญหาหน้างานจริง (Production Issue)"
       ]
     },
     "skills": [
@@ -298,6 +300,14 @@
       {
         "title": "Certificate-07",
         "image": "007.jpg"
+      },
+      {
+        "title": "Presentation Bible",
+        "image": "008.png"
+      },
+      {
+        "title": "SPEAK Model",
+        "image": "009.png"
       }
     ]
   }
